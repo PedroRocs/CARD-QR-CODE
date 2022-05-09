@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+p,
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 350px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 25px;
+
+}
+
+#container img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+#view {
+    position: absolute;
+    transform: translate(0px, -305px);
+    background-color: rgba(16, 204, 204, .0);
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+#view svg {
+    position: absolute;
+    transform: translate(130px, 130px);
+
+}
+#view:hover {
+    background-color: rgb(16, 204, 204, .3);
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+#description {
+    padding: 20px 0;
+}
+
+#description h1 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#description h1:hover{
+    color: aqua;
+    transition: 0.7s;
+}
+
+#description p {
+    color: hsl(215, 51%, 70%);
+}
+
+#info-adicionais {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#value {
+    color: aqua;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+#temp svg,
+#value svg {
+    margin-right: 5px;
+}
+
+#autor {
+    margin-top: 25px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(215, 51%, 70%);
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+#autor img {
+    width: 30px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+#autor b {
+    margin-left: 5px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+#autor b:hover {
+    color: aqua;
+    transition: 0.5s;
+}
